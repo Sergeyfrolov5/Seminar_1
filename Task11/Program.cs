@@ -7,8 +7,33 @@
 // 918 -> 98
 // 12 мин
 
+
 int number = new Random().Next(100, 1000);
-Console.WriteLine($"Случайное трёхзначное число {number}");
+Console.WriteLine($"Случайное трёхзначное число: {number}");
+
+// int firstDigit = number / 100;
+// int thirdDigit = number % 10;
+// int digit = firstDigit * 10 + thirdDigit;
+
+// Console.WriteLine($"{number} -> {digit}");
+
+int DelSeconDigit(int num)
+{
+    int firstDigit = num / 100;
+    int thirdDigit = num % 10;
+    return firstDigit * 10 + thirdDigit;
+}
+
+int result = DelSeconDigit(number);
+Console.WriteLine(result);
+
+
+
+
+
+
+// int number = new Random().Next(100, 1000);
+// Console.WriteLine($"Случайное трёхзначное число {number}");
 
 // int firstDigit = number / 100;
 // int thirdDigit = number % 10;
@@ -22,15 +47,15 @@ Console.WriteLine($"Случайное трёхзначное число {number
 
 
 // Метод
-int DelSecondDigit(int num)
-{
-    int firstDigit = num / 100;
-    int thirdDigit = num % 10;
-    return firstDigit * 10 + thirdDigit;
+// int DelSecondDigit(int num)
+// {
+//     int firstDigit = num / 100;
+//     int thirdDigit = num % 10;
+//     return firstDigit * 10 + thirdDigit;
 
-}
+// }
 
-int result = DelSecondDigit(number);
-Console.WriteLine($"Полученное число {result}");
+// int result = DelSecondDigit(number);
+// Console.WriteLine($"Полученное число {result}");
 
 

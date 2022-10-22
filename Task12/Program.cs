@@ -13,3 +13,17 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 if(number1 % number2 == 0)
     Console.WriteLine("Кратно");
 else Console.WriteLine($"Не кратно, остаток {number1 % number2}");
+
+
+
+// Улучшено:
+// Console.Write("Введите первое число: "); 
+// int number1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите второе число: ");
+// int number2 = Convert.ToInt32(Console.ReadLine());
+// if (number1 >= number2)
+// {
+//     if (number1 % number2 == 0) Console.Write("кратно");
+//     else Console.Write($"не кратно, остаток {number1 % number2}");
+// }
+// else Console.WriteLine("не кратно!");

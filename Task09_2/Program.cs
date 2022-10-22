@@ -7,17 +7,41 @@
 // 85 -> 8
 
 int number = new Random().Next(10, 100);
-Console.WriteLine($"Случайное число из отрезка 10 - 99 => {number}");
+Console.WriteLine($"Случайное число из отрезка [10 - 99] => {number}");
 
-int firstDigit = number / 10; // 78 / 10 = 7
-int secondDigit = number % 10; // 78 % 10 = 8
+int MaxDigit(int num)
+{
+    int firstDigit = num / 10;
+    int secondDigit = num % 10;
+    return firstDigit > secondDigit ? firstDigit : secondDigit;
+}
 
-if (firstDigit > secondDigit) Console.WriteLine($"Наибольшая цифра числа равна {firstDigit}");
-else Console.WriteLine($"Наибольшая цифра числа равна {secondDigit}");
+int res = MaxDigit(number);
+Console.Write(res);
+
+
+
+
+
+
+// int number = new Random().Next(10, 100);
+// Console.WriteLine($"Случайное число из отрезка 10 - 99 => {number}");
+
+// int firstDigit = number / 10; // 78 / 10 = 7
+// int secondDigit = number % 10; // 78 % 10 = 8
+
+// if (firstDigit > secondDigit) Console.WriteLine($"Наибольшая цифра числа равна {firstDigit}");
+// else Console.WriteLine($"Наибольшая цифра числа равна {secondDigit}");
 
 // int res = Math.Max(firstDigit, secondDigit);
 // Console.WriteLine(res); 
 
+
+
+
+
+
+//int maxDigit = firstDigit > secondDigit ? firstDigit : secondDigit;
 
 // // Условный оператор
 // int result = default;
