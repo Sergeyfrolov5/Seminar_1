@@ -9,7 +9,7 @@ void SquareTable(int num)
     if (num > 0)
     {
         for (int i = 1; i <= num; i++)
-        {
+        { 
             Console.WriteLine($"|{i,4} | {i * i,4}|");
         }
     }

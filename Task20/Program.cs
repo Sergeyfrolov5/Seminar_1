@@ -30,7 +30,7 @@ Console.WriteLine($"Расстояние между точками А ({X1}, {Y1
 
 
 
-
+// double res = Math.Round(d, 2, MidpointRounding.ToZero)
 
 // double d = 5.099997545;
 // double res = Math.Round(d, 2, MidpointRounding.ToZero);
